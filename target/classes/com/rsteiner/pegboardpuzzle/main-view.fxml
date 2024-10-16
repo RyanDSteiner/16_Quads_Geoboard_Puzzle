@@ -6,25 +6,29 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rsteiner.pegboardpuzzle.MainController">
    <children>
-      <AnchorPane layoutX="137.0" layoutY="257.0" prefHeight="400.0" prefWidth="400.0">
+      <AnchorPane fx:id="MainPegboard" layoutX="137.0" layoutY="257.0" prefHeight="400.0" prefWidth="400.0">
          <children>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e4b797" height="400.0" stroke="BLACK" strokeType="INSIDE" width="400.0" />
-            <Circle fill="#944314" layoutX="75.0" layoutY="75.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
-            <Circle fill="#944314" layoutX="75.0" layoutY="325.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
-            <Circle fill="#944314" layoutX="75.0" layoutY="200.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
-            <Circle fill="#944314" layoutX="200.0" layoutY="75.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
-            <Circle fill="#944314" layoutX="200.0" layoutY="325.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
-            <Circle fill="#944314" layoutX="200.0" layoutY="200.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
-            <Circle fill="#944314" layoutX="325.0" layoutY="325.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
-            <Circle fill="#944314" layoutX="325.0" layoutY="200.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
-            <Circle fill="#944314" layoutX="325.0" layoutY="75.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+            <Line fx:id="l1" endY="208.0" startX="75.0" startY="325.0" strokeWidth="3.0" visible="false" />
+            <Line fx:id="l2" endX="189.0" endY="314.0" startX="65.0" startY="315.0" strokeWidth="3.0" visible="false" />
+            <Line fx:id="l3" endX="75.0" endY="325.0" startX="75.0" startY="200.0" strokeWidth="3.0" visible="false" />
+            <Line fx:id="l4" endX="75.0" endY="325.0" startX="75.0" startY="200.0" strokeWidth="3.0" visible="false" />
+            <Circle fx:id="c9" fill="#944314" layoutX="325.0" layoutY="325.0" onMouseClicked="#pegClick" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="c1" fill="#944314" layoutX="75.0" layoutY="75.0" onMouseClicked="#pegClick" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="c2" fill="#944314" layoutX="200.0" layoutY="75.0" onMouseClicked="#pegClick" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="c3" fill="#944314" layoutX="325.0" layoutY="75.0" onMouseClicked="#pegClick" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="c4" fill="#944314" layoutX="75.0" layoutY="200.0" onMouseClicked="#pegClick" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="c5" fill="#944314" layoutX="200.0" layoutY="200.0" onMouseClicked="#pegClick" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="c6" fill="#944314" layoutX="325.0" layoutY="200.0" onMouseClicked="#pegClick" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="c7" fill="#944314" layoutX="75.0" layoutY="325.0" onMouseClicked="#pegClick" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="c8" fill="#944314" layoutX="200.0" layoutY="325.0" onMouseClicked="#pegClick" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
          </children>
       </AnchorPane>
       <GridPane layoutX="600.0" layoutY="50.0" prefHeight="600.0" prefWidth="600.0">
@@ -348,13 +352,13 @@
          </children>
       </GridPane>
       <Text layoutX="67.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-      <Button layoutX="21.0" layoutY="72.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="92.0" text="Instructions" />
-      <Button layoutX="21.0" layoutY="113.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="92.0" text="Options" />
-      <Button layoutX="21.0" layoutY="32.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="92.0" text="Quit" />
-      <Button layoutX="21.0" layoutY="413.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="92.0" text="Submit" />
-      <Button layoutX="21.0" layoutY="507.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="92.0" text="Undo" />
-      <Button layoutX="21.0" layoutY="554.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="92.0" text="Reset" />
-      <Text layoutX="137.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Draw a 4-sided polygon on the grid, then click submit. Try to find all 16 unique quadrilaterals!" textAlignment="CENTER" wrappingWidth="400.0">
+      <Button fx:id="InstructionsButton" layoutX="21.0" layoutY="72.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="92.0" text="Instructions" />
+      <Button fx:id="OptionsButton" layoutX="21.0" layoutY="113.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="92.0" text="Options" />
+      <Button fx:id="QuitButton" layoutX="21.0" layoutY="32.0" mnemonicParsing="false" onMouseClicked="#quit" prefHeight="31.0" prefWidth="92.0" text="Quit" />
+      <Button fx:id="SubmitButton" layoutX="21.0" layoutY="413.0" mnemonicParsing="false" onMouseClicked="#submit" prefHeight="77.0" prefWidth="92.0" text="Submit" />
+      <Button fx:id="UndoButton" layoutX="21.0" layoutY="507.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="92.0" text="Undo" />
+      <Button fx:id="ResetButton" layoutX="21.0" layoutY="554.0" mnemonicParsing="false" onMouseClicked="#reset" prefHeight="31.0" prefWidth="92.0" text="Reset" />
+      <Text layoutX="137.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Click on the pegs to draw a 4-sided polygon. Try to find all 16 unique quadrilaterals!" textAlignment="CENTER" wrappingWidth="400.0">
          <font>
             <Font size="19.0" />
          </font>
