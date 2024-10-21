@@ -31,7 +31,7 @@
             <Circle fx:id="c8" fill="#944314" layoutX="200.0" layoutY="325.0" onMouseClicked="#pegClick" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
          </children>
       </AnchorPane>
-      <GridPane layoutX="600.0" layoutY="50.0" prefHeight="600.0" prefWidth="600.0">
+      <GridPane fx:id="solutionBoard" layoutX="600.0" layoutY="50.0" prefHeight="600.0" prefWidth="600.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -45,18 +45,9 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+            <AnchorPane fx:id="p1" prefHeight="200.0" prefWidth="200.0">
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f2f2" height="130.0" layoutX="6.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="130.0" x="10.0" y="10.0" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
                   <Text layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1">
                      <font>
                         <Font size="14.0" />
@@ -64,18 +55,9 @@
                   </Text>
                </children>
             </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+            <AnchorPane fx:id="p2" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f2f2" height="130.0" layoutX="6.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="130.0" x="10.0" y="10.0" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
                   <Text layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2">
                      <font>
                         <Font size="14.0" />
@@ -83,7 +65,7 @@
                   </Text>
                </children>
             </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+            <AnchorPane fx:id="p3" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f2f2" height="130.0" layoutX="6.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="130.0" x="10.0" y="10.0" />
                   <Circle fill="#c6c6c6" layoutX="36.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
@@ -102,7 +84,7 @@
                   </Text>
                </children>
             </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3">
+            <AnchorPane fx:id="p4" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3">
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f2f2" height="130.0" layoutX="6.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="130.0" x="10.0" y="10.0" />
                   <Circle fill="#c6c6c6" layoutX="36.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
@@ -121,7 +103,7 @@
                   </Text>
                </children>
             </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+            <AnchorPane fx:id="p5" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f2f2" height="130.0" layoutX="6.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="130.0" x="10.0" y="10.0" />
                   <Circle fill="#c6c6c6" layoutX="36.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
@@ -140,7 +122,7 @@
                   </Text>
                </children>
             </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <AnchorPane fx:id="p6" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f2f2" height="130.0" layoutX="6.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="130.0" x="10.0" y="10.0" />
                   <Circle fill="#c6c6c6" layoutX="36.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
@@ -159,7 +141,7 @@
                   </Text>
                </children>
             </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <AnchorPane fx:id="p7" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f2f2" height="130.0" layoutX="6.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="130.0" x="10.0" y="10.0" />
                   <Circle fill="#c6c6c6" layoutX="36.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
@@ -178,7 +160,7 @@
                   </Text>
                </children>
             </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+            <AnchorPane fx:id="p8" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f2f2" height="130.0" layoutX="6.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="130.0" x="10.0" y="10.0" />
                   <Circle fill="#c6c6c6" layoutX="36.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
@@ -197,7 +179,7 @@
                   </Text>
                </children>
             </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+            <AnchorPane fx:id="p9" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f2f2" height="130.0" layoutX="6.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="130.0" x="10.0" y="10.0" />
                   <Circle fill="#c6c6c6" layoutX="36.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
@@ -216,7 +198,7 @@
                   </Text>
                </children>
             </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <AnchorPane fx:id="p10" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f2f2" height="130.0" layoutX="6.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="130.0" x="10.0" y="10.0" />
                   <Circle fill="#c6c6c6" layoutX="36.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
@@ -235,7 +217,7 @@
                   </Text>
                </children>
             </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+            <AnchorPane fx:id="p11" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f2f2" height="130.0" layoutX="6.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="130.0" x="10.0" y="10.0" />
                   <Circle fill="#c6c6c6" layoutX="36.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
@@ -254,7 +236,7 @@
                   </Text>
                </children>
             </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+            <AnchorPane fx:id="p12" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f2f2" height="130.0" layoutX="6.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="130.0" x="10.0" y="10.0" />
                   <Circle fill="#c6c6c6" layoutX="36.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
@@ -273,7 +255,7 @@
                   </Text>
                </children>
             </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3">
+            <AnchorPane fx:id="p13" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3">
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f2f2" height="130.0" layoutX="6.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="130.0" x="10.0" y="10.0" />
                   <Circle fill="#c6c6c6" layoutX="36.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
@@ -292,7 +274,7 @@
                   </Text>
                </children>
             </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <AnchorPane fx:id="p14" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f2f2" height="130.0" layoutX="6.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="130.0" x="10.0" y="10.0" />
                   <Circle fill="#c6c6c6" layoutX="36.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
@@ -311,7 +293,7 @@
                   </Text>
                </children>
             </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+            <AnchorPane fx:id="p15" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f2f2" height="130.0" layoutX="6.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="130.0" x="10.0" y="10.0" />
                   <Circle fill="#c6c6c6" layoutX="36.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
@@ -330,7 +312,7 @@
                   </Text>
                </children>
             </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+            <AnchorPane fx:id="p16" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f2f2" height="130.0" layoutX="6.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="130.0" x="10.0" y="10.0" />
                   <Circle fill="#c6c6c6" layoutX="36.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />

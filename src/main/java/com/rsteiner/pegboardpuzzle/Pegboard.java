@@ -27,12 +27,11 @@ public class Pegboard extends AnchorPane {
         }
     }
 
-    public Pegboard(Circle c1, Circle c2, Circle c3, Circle c4, Circle c5, Circle c6, Circle c7, Circle c8, Circle c9,
-                    Line l1, Line l2, Line l3, Line l4) {
-        pegs[0] = new Peg(c1, 1); pegs[1] = new Peg(c2, 2); pegs[2] = new Peg(c3, 3);
-        pegs[3] = new Peg(c4, 4); pegs[4] = new Peg(c5, 5); pegs[5] = new Peg(c6, 6);
-        pegs[6] = new Peg(c7, 7); pegs[7] = new Peg(c8, 8); pegs[8] = new Peg(c9, 9);
-        lines[0] = l1;  lines[1] = l2; lines[2] = l3; lines[3] = l4;
+    public Pegboard(Circle[] circles, Line[] l) {
+        for (int i = 0; i < circles.length; i++) {
+            pegs[i] = new Peg(circles[i], i+1);
+        }
+        this.lines = l;
     }
 
     public Peg getPeg(int n) {
@@ -43,6 +42,10 @@ public class Pegboard extends AnchorPane {
         else {
             return pegs[n-1];
         }
+    }
+
+    public int getCount() {
+        return count;
     }
 
     public int press(int index) {
@@ -105,20 +108,22 @@ public class Pegboard extends AnchorPane {
         connector.setVisible(true);
     }
 
-    public String trace () {
-        int[] vertices = new int[4];
+    public int[] trace () {
+        String answer = "";
+        int[] v = new int[4];
         Peg iter = first;
         int i = 0;
         while (iter != null && i < 4) {
-            vertices[i] = iter.n;
+            answer += iter.n;
+            v[i] = iter.n;
             iter = iter.next;
             i++;
         }
 
-        return traceReformat(vertices);
+        return v;
     }
 
-    private String traceReformat (int[] v) {
+    public String traceReformat (int[] v) {
         if (v.length != 4) { return null; }
         //Find lowest value in chain
         int index = 0;
@@ -129,7 +134,7 @@ public class Pegboard extends AnchorPane {
                 min = v[i];
             }
         }
-        //Covert to string that starts with min
+        //Covert back to string that starts with min
         String s = "";
         for (int i = 0; i < 4; i++) {
             s+= v[index];
