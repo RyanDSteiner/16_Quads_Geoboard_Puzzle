@@ -22,14 +22,14 @@ Continue to try and find as many as you can! Can you find all 16?
 
 ## Background
 
-This program was created by me, Ryan Steiner, as a personal project while I am studying Computer Science at ASU. My project goal was to design a program that provides some value or use case in an educational setting. I used to teach middle school math, and this program corresponds with a math puzzle that I used to show student.
+This program was created by me, Ryan Steiner, as a personal project while I am studying Computer Science at ASU. My project goal was to design a program that provides some value or use case in an educational setting. I used to teach middle school math, and this program corresponds with a math puzzle that I used to challenge students to solve.
 
 I first saw this puzzle in an elementary education class, and it doesn't have a special name, so I call it the "16 quadrilaterals" puzzle. The question at the heart of the puzzle is, "How many unique quadrilaterals can you draw on a 3x3 grid?"
 
-The answer is: there are 94 you can draw altogether, but if you don't count congruent shapes, there are 16 unique quadrilaterals you can draw, hence the name of the puzzle.
+The answer is: There are 94 you can draw altogether, but if you don't count congruent shapes, there are 16 unique quadrilaterals you can draw, hence the name of the puzzle.
 
 In the lesson, students used Geoboards to find the different possible shapes, then recorded their answer with pencil and paper, working in groups to collaborate. I really liked this activity because it is relevant to many elementary and middle school math concepts. The activity helps students learn the special quadrilaterals like squares, trapezoids and parallelograms, but it is also a great way for students to better recognize congruency between shapes after transformations like reflection, rotation and translation.
 
-This program simulates the activity on a virtual board and provides feedback to the user as they explore the problem. It could be used alongside Geoboards in a classroom as a way for students to check their answer, or it could be used in an online classroom as a virtual version of the activity. 
+This program simulates the activity on a virtual board and provides feedback to the user as they explore the problem. It could be used alongside Geoboards in a classroom as a way for students to check their answers, or it could be used in an online classroom as a virtual version of the activity. 
 
 However, this version of the program is not intended for any commercial or public use. I may continue to work on this program in the future, but for now it is just a working prototype. You are free to download and try the program though!
