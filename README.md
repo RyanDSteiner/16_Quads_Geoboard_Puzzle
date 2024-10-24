@@ -8,8 +8,6 @@ Download the file 16_Quadrilaterals_Geoboard_Puzzle_1.0.jar and run the executab
 
 ## Using the program
 
-This program is intended as part of a grade school math lesson, serving as an alternative or supplement to geoboard math manipulatives. The program engages the user's ability to think geometrically by solving a special math puzzle. 
-
 On a 3x3 grid, there are 16 unique quadrilaterals you can draw by connecting the dots on the grid together. This program challenges the user to find all 16 of these shapes. 
 
 To draw a quadrilateral, first click one of the pegs on the grid. Click three more pegs to connect the dots, then connect back to the first peg. Finally, click the "submit" button to check your shape. 
@@ -32,6 +30,6 @@ The answer is: There are 94 you can draw altogether, but if you don't count cong
 
 As a teacher, I used this puzzle as part of part of a geometry lesson. In the lesson, students used Geoboards to find the different possible shapes, then recorded their answer with pencil and paper, working in groups to collaborate. I really like this activity because it is relevant to many elementary and middle school math concepts. The exercise helps students learn the special quadrilaterals like squares, trapezoids and parallelograms, but it is also a great way for students to better recognize congruency between shapes after transformations like reflection, rotation and translation.
 
-This program simulates the activity on a virtual board and provides feedback to the user as they explore the problem. It could be used alongside Geoboards in a classroom as a way for students to check their answers, or it could be used in an online classroom as a virtual version of the activity. 
+This program simulates the activity on a virtual board and provides feedback to the user as they explore the problem. It could be used alongside Geoboards in a classroom as a way for students to check their answers and get immediate feedback, or it could be used in an online classroom as a virtual version of the activity. 
 
 However, this version of the program is a prototpye and not intended for any commercial or public use. I may continue to work on this program in the future, but for now it is just a working prototype. You are free to download and try the program though!
