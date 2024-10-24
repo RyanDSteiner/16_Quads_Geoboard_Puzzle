@@ -8,7 +8,7 @@ Download the file 16_Quadrilaterals_Geoboard_Puzzle_1.0.jar and run the executab
 
 ## Using the program
 
-This program is intended as part of a grade school math lesson, serving as an alternative or supplement to geoboard math manipulatives. The lesson engages students' ability to think geometrically by solving a special math puzzle. 
+This program is intended as part of a grade school math lesson, serving as an alternative or supplement to geoboard math manipulatives. The program engages the user's ability to think geometrically by solving a special math puzzle. 
 
 On a 3x3 grid, there are 16 unique quadrilaterals you can draw by connecting the dots on the grid together. This program challenges the user to find all 16 of these shapes. 
 
