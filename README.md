@@ -22,7 +22,7 @@ Continue to try and find as many as you can! Can you find all 16?
 
 ## Background
 
-This program was created by me, Ryan Steiner, as a personal project while I am studying Computer Science at ASU. My project goal was to design a program that provides some value or use case in an educational setting. I used to teach middle school math, and this program corresponds with a math puzzle that I used to challenge students to solve.
+This program was created by me, Ryan Steiner, as a personal project while I am studying Computer Science at ASU. My project goal was to design a program that provides some unique value or use case in an educational setting. I used to teach middle school math, and this program corresponds with a math puzzle that I used to challenge students to solve.
 
 I first saw this puzzle in an elementary education class, and it doesn't have a special name, so I call it the "16 quadrilaterals" puzzle. The question at the heart of the puzzle is, "How many unique quadrilaterals can you draw on a 3x3 grid?"
 
