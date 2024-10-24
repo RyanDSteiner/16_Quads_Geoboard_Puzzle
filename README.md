@@ -14,9 +14,11 @@ On a 3x3 grid, there are 94 possible quadrilaterals that you can draw, but if yo
 
 To draw a quadrilateral, first click one of the 9 pegs on the grid. Click three more pegs to connect the dots, then connect back to the first peg. Finally, click the "submit" button to check your shape. 
 
-If your shape is a valid quadrilateral, it will appear on the grid of 16, and the system will note that you found that quadrilateral. The ordering of the quadrilaterals on the grid was chosen arbitrarily, although similar shapes like squares and trapezoids are grouped together. 
+If you click on a peg in an invalid way such as selecting more than four pegs, or if you submit an invalid quadrilateral, a message will display.  
 
-Once you have submitted a shape, press the reset button to reset the board and draw a new one. Clicking undo will also let you go back from the last peg you clicked. If you submit a shape that is congruent to one you already found, the system will let you know.
+If your shape is a valid quadrilateral, it will appear on the grid of 16 according to its pre-assigned number. The ordering of the quadrilaterals on the grid was chosen arbitrarily, although similar shapes like squares and trapezoids are grouped together.
+
+Once you have submitted a shape, press the reset button to reset the board and draw a new one. Clicking undo will also let you go back from the last peg you clicked. If you submit a shape that is congruent to one you already found, a message will display. 
 
 Continue to try and find as many as you can! Can you find all 16?
 
