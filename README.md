@@ -30,7 +30,7 @@ I first saw this puzzle in an elementary education class, and it doesn't have a 
 
 The answer is: There are 94 you can draw altogether, but if you don't count congruent shapes, there are 16 unique quadrilaterals you can draw, hence the name of the puzzle. 
 
-As a teacher, I used this puzzle as part of part of a geometry lesson. In the lesson, students used Geoboards to find the different possible shapes, then recorded their answer with pencil and paper, working in groups to collaborate. I really liked this activity because it is relevant to many elementary and middle school math concepts. The exercise helps students learn the special quadrilaterals like squares, trapezoids and parallelograms, but it is also a great way for students to better recognize congruency between shapes after transformations like reflection, rotation and translation.
+As a teacher, I used this puzzle as part of part of a geometry lesson. In the lesson, students used Geoboards to find the different possible shapes, then recorded their answer with pencil and paper, working in groups to collaborate. I really like this activity because it is relevant to many elementary and middle school math concepts. The exercise helps students learn the special quadrilaterals like squares, trapezoids and parallelograms, but it is also a great way for students to better recognize congruency between shapes after transformations like reflection, rotation and translation.
 
 This program simulates the activity on a virtual board and provides feedback to the user as they explore the problem. It could be used alongside Geoboards in a classroom as a way for students to check their answers, or it could be used in an online classroom as a virtual version of the activity. 
 
