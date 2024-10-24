@@ -13,7 +13,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rsteiner.pegboardpuzzle.MainController">
    <children>
-      <AnchorPane fx:id="MainPegboard" layoutX="137.0" layoutY="257.0" prefHeight="400.0" prefWidth="400.0">
+      <AnchorPane fx:id="MainPegboard" layoutX="150.0" layoutY="275.0" prefHeight="400.0" prefWidth="400.0">
          <children>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e4b797" height="400.0" stroke="BLACK" strokeType="INSIDE" width="400.0" />
             <Line fx:id="l1" endY="208.0" startX="75.0" startY="325.0" strokeWidth="3.0" visible="false" />
@@ -31,7 +31,7 @@
             <Circle fx:id="c8" fill="#944314" layoutX="200.0" layoutY="325.0" onMouseClicked="#pegClick" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
          </children>
       </AnchorPane>
-      <GridPane fx:id="solutionBoard" layoutX="600.0" layoutY="50.0" prefHeight="600.0" prefWidth="600.0">
+      <GridPane fx:id="solutionBoard" layoutX="600.0" layoutY="80.0" prefHeight="600.0" prefWidth="600.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -68,15 +68,6 @@
             <AnchorPane fx:id="p3" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f2f2" height="130.0" layoutX="6.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="130.0" x="10.0" y="10.0" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
                   <Text layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3">
                      <font>
                         <Font size="14.0" />
@@ -87,15 +78,6 @@
             <AnchorPane fx:id="p4" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3">
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f2f2" height="130.0" layoutX="6.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="130.0" x="10.0" y="10.0" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
                   <Text layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4">
                      <font>
                         <Font size="14.0" />
@@ -106,15 +88,6 @@
             <AnchorPane fx:id="p5" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f2f2" height="130.0" layoutX="6.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="130.0" x="10.0" y="10.0" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
                   <Text layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5">
                      <font>
                         <Font size="14.0" />
@@ -125,15 +98,6 @@
             <AnchorPane fx:id="p6" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f2f2" height="130.0" layoutX="6.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="130.0" x="10.0" y="10.0" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
                   <Text layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6">
                      <font>
                         <Font size="14.0" />
@@ -144,15 +108,6 @@
             <AnchorPane fx:id="p7" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f2f2" height="130.0" layoutX="6.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="130.0" x="10.0" y="10.0" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
                   <Text layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7">
                      <font>
                         <Font size="14.0" />
@@ -163,15 +118,6 @@
             <AnchorPane fx:id="p8" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f2f2" height="130.0" layoutX="6.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="130.0" x="10.0" y="10.0" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
                   <Text layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8">
                      <font>
                         <Font size="14.0" />
@@ -182,15 +128,6 @@
             <AnchorPane fx:id="p9" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f2f2" height="130.0" layoutX="6.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="130.0" x="10.0" y="10.0" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
                   <Text layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9">
                      <font>
                         <Font size="14.0" />
@@ -201,15 +138,6 @@
             <AnchorPane fx:id="p10" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f2f2" height="130.0" layoutX="6.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="130.0" x="10.0" y="10.0" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
                   <Text layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10">
                      <font>
                         <Font size="14.0" />
@@ -220,15 +148,6 @@
             <AnchorPane fx:id="p11" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f2f2" height="130.0" layoutX="6.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="130.0" x="10.0" y="10.0" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
                   <Text layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="11">
                      <font>
                         <Font size="14.0" />
@@ -239,15 +158,6 @@
             <AnchorPane fx:id="p12" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f2f2" height="130.0" layoutX="6.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="130.0" x="10.0" y="10.0" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
                   <Text layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12">
                      <font>
                         <Font size="14.0" />
@@ -258,15 +168,6 @@
             <AnchorPane fx:id="p13" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3">
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f2f2" height="130.0" layoutX="6.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="130.0" x="10.0" y="10.0" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
                   <Text layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="13">
                      <font>
                         <Font size="14.0" />
@@ -277,15 +178,6 @@
             <AnchorPane fx:id="p14" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f2f2" height="130.0" layoutX="6.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="130.0" x="10.0" y="10.0" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
                   <Text layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="14">
                      <font>
                         <Font size="14.0" />
@@ -296,15 +188,6 @@
             <AnchorPane fx:id="p15" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f2f2" height="130.0" layoutX="6.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="130.0" x="10.0" y="10.0" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
                   <Text layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="15">
                      <font>
                         <Font size="14.0" />
@@ -315,15 +198,6 @@
             <AnchorPane fx:id="p16" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f2f2" height="130.0" layoutX="6.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="130.0" x="10.0" y="10.0" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="36.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="81.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="36.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="126.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
-                  <Circle fill="#c6c6c6" layoutX="126.0" layoutY="81.0" radius="4.0" stroke="#909090" strokeType="INSIDE" />
                   <Text layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="16">
                      <font>
                         <Font size="14.0" />
@@ -334,15 +208,23 @@
          </children>
       </GridPane>
       <Text layoutX="67.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-      <Button fx:id="InstructionsButton" layoutX="21.0" layoutY="72.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="92.0" text="Instructions" />
-      <Button fx:id="OptionsButton" layoutX="21.0" layoutY="113.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="92.0" text="Options" />
       <Button fx:id="QuitButton" layoutX="21.0" layoutY="32.0" mnemonicParsing="false" onMouseClicked="#quit" prefHeight="31.0" prefWidth="92.0" text="Quit" />
       <Button fx:id="SubmitButton" layoutX="21.0" layoutY="413.0" mnemonicParsing="false" onMouseClicked="#submit" prefHeight="77.0" prefWidth="92.0" text="Submit" />
-      <Button fx:id="UndoButton" layoutX="21.0" layoutY="507.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="92.0" text="Undo" />
+      <Button fx:id="UndoButton" layoutX="21.0" layoutY="507.0" mnemonicParsing="false" onMouseClicked="#undo" prefHeight="31.0" prefWidth="92.0" text="Undo" />
       <Button fx:id="ResetButton" layoutX="21.0" layoutY="554.0" mnemonicParsing="false" onMouseClicked="#reset" prefHeight="31.0" prefWidth="92.0" text="Reset" />
-      <Text layoutX="137.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Click on the pegs to draw a 4-sided polygon. Try to find all 16 unique quadrilaterals!" textAlignment="CENTER" wrappingWidth="400.0">
+      <Text fx:id="EventText" layoutX="150.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="400.0">
          <font>
-            <Font size="19.0" />
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="330.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="16 Quadrilaterals Geoboard Puzzle:" underline="true" wrappingWidth="684.20751953125">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Text>
+      <Text fx:id="InstructionsText11" layoutX="150.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To draw a quadrilateral, click on four pegs to connect the dots, then connect back to the first peg ot complete the shape. Then click submit. Try to find all 16 unique quadrilaterals!" wrappingWidth="412.0">
+         <font>
+            <Font size="15.0" />
          </font>
       </Text>
    </children>

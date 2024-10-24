@@ -17,6 +17,7 @@ public class Pegboard extends AnchorPane {
         protected int n;
         protected boolean pressed = false;
         protected Peg next;
+        protected Peg previous;
 
         protected Peg(Circle c, int num) {
             this.circle = c;
@@ -58,11 +59,18 @@ public class Pegboard extends AnchorPane {
             return -3;
         }
 
+        //Check a shape has already been formed
+        if (count > 4) {
+            return -4;
+        }
+
         //Handle cases where peg was already pressed
         if (peg.pressed) {
             if (count == 4 && peg.n == first.n) {
+                peg.previous = lastClicked;
                 count++;
                 connect(lastClicked, peg, count);
+                lastClicked = peg;
                 return 0;
             } else {
                 return -2;
@@ -78,6 +86,7 @@ public class Pegboard extends AnchorPane {
                 lastClicked = peg;
             }
             else {
+                peg.previous = lastClicked;
                 lastClicked.next = peg;
                 connect(lastClicked, peg, count);
                 lastClicked = peg;
@@ -92,11 +101,38 @@ public class Pegboard extends AnchorPane {
         for (int i = 0; i < 9; i++) {
             pegs[i].pressed = false;
             pegs[i].next = null;
+            pegs[i].previous = null;
             pegs[i].circle.setFill(javafx.scene.paint.Color.web("#944314"));
         }
         for (int i = 0; i < 4; i++) {
             lines[i].setVisible(false);
         }
+    }
+
+    public void undo() {
+        if (count < 1) { return; }
+
+        if (count == 1) {
+            lastClicked.circle.setFill(javafx.scene.paint.Color.web("#944314"));
+            lastClicked.pressed = false;
+            first = null;
+            lastClicked = null;
+            count--;
+        }
+        else {
+            Line connector = lines[count - 2];
+            connector.setVisible(false);
+            Peg prev = lastClicked.previous;
+            if (lastClicked != first) {
+                lastClicked.circle.setFill(javafx.scene.paint.Color.web("#944314"));
+                lastClicked.pressed = false;
+            }
+            lastClicked.previous = null;
+            prev.next = null;
+            lastClicked = prev;
+            count--;
+        }
+        return;
     }
 
     public void connect(Peg p1, Peg p2, int count) {

@@ -6,6 +6,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Line;
+import javafx.scene.text.Text;
 
 public class MainController {
 
@@ -19,9 +20,12 @@ public class MainController {
     private AnchorPane p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16;
     @FXML
     private Line l1, l2, l3, l4;
+    @FXML
+    private Text EventText;
 
     private Pegboard pegboard;
     private SolutionGrid sGrid;
+    private boolean[] shapesCompleted = new boolean[16];
 
     @FXML
     public void initialize() {
@@ -37,15 +41,28 @@ public class MainController {
        if (pegboard.getCount() == 5) {
            int[] submission = pegboard.trace();
            String reformatted = pegboard.traceReformat(submission);
-           System.out.println("\n" + reformatted);
            int qAnswer = sGrid.checkSolution(reformatted);
            if (qAnswer == 0) {
-               qAnswer = sGrid.checkSolution(reformatted);
+               EventText.setText("This shape is not a valid quadrilateral. Press reset to try again.");
            }
-           if (qAnswer > 0) {
-               sGrid.displaySolution(qAnswer, reformatted);
+           else if (qAnswer > 0 && !shapesCompleted[qAnswer-1]) {
+               sGrid.displaySolution(qAnswer, submission);
+               shapesCompleted[qAnswer-1] = true;
+               if (isComplete(shapesCompleted)) {
+                   EventText.setText("WOW! You found all 16 quadrilaterals! You are amazing!!!!");
+               }
+               else {
+                   EventText.setText("You found quadrilateral #" + qAnswer + "! Congrats!");
+               }
+           }
+           else {
+               EventText.setText("This shape is congruent to quadrilateral #" + qAnswer + ", which you already found. Press reset to try again.");
            }
            return;
+       }
+
+       else {
+           EventText.setText("This shape is not complete, you can't submit it yet.");
        }
     }
 
@@ -57,6 +74,12 @@ public class MainController {
     @FXML
     public void reset(MouseEvent event) {
         pegboard.reset();
+        EventText.setText("");
+    }
+
+    @FXML
+    public void undo(MouseEvent event) {
+        pegboard.undo();
     }
 
     @FXML
@@ -65,19 +88,33 @@ public class MainController {
             Circle circle = (Circle) event.getSource();
             int index = Character.getNumericValue(((Circle) event.getSource()).getId().charAt(1));
             int x = pegboard.press(index);
+            if (x == -4) {
+                EventText.setText("You already finished drawing your shape! Click undo to go back, or click submit.");
+
+            }
             if (x == -3) {
-                System.out.println("Error loading peg");
+                EventText.setText("Loading error");
             }
             if (x == -2) {
-                System.out.println("You already presssed that peg!");
+                EventText.setText("You already pressed that peg!");
             }
             if (x == -1) {
-                System.out.print("Error: You can only click on four pegs.");
+                EventText.setText("You already clicked on four pegs, now connect back to the first one you clicked.");
             }
             else {
                     circle.setFill(javafx.scene.paint.Color.web("#375da8"));
                 }
             }
+        }
+
+        public boolean isComplete (boolean[] shapes) {
+            boolean complete = true;
+            for (int i = 0; i < shapes.length; i++) {
+                if (!shapes[i]) {
+                    complete = false;
+                }
+            }
+            return complete;
         }
 
     }
