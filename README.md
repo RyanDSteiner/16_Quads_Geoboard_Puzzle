@@ -10,9 +10,9 @@ Download the file 16_Quadrilaterals_Geoboard_Puzzle_1.0.jar and run the executab
 
 This program is intended as part of a grade school math lesson, serving as an alternative or supplement to geoboard math manipulatives. The lesson engages students' ability to think geometrically by solving a special math puzzle. 
 
-On a 3x3 grid, there are 94 possible quadrilaterals that you can draw, but if you don't count congruent shapes, there are 16 unique quadrilaterals you can draw. This program challenges the user to find all 16 of these shapes. 
+On a 3x3 grid, there are 16 unique quadrilaterals you can draw by connecting the dots on the grid together. This program challenges the user to find all 16 of these shapes. 
 
-To draw a quadrilateral, first click one of the 9 pegs on the grid. Click three more pegs to connect the dots, then connect back to the first peg. Finally, click the "submit" button to check your shape. 
+To draw a quadrilateral, first click one of the pegs on the grid. Click three more pegs to connect the dots, then connect back to the first peg. Finally, click the "submit" button to check your shape. 
 
 If you click on a peg in an invalid way such as selecting more than four pegs, or if you submit an invalid quadrilateral, a message will display.  
 
