@@ -32,4 +32,4 @@ As a teacher, I used this puzzle as part of part of a geometry lesson. In the le
 
 This program simulates the activity on a virtual board and provides feedback to the user as they explore the problem. It could be used alongside Geoboards in a classroom as a way for students to check their answers and get immediate feedback, or it could be used in an online classroom as a virtual version of the activity. 
 
-However, this version of the program is a prototpye and not intended for any commercial or public use. I may continue to work on this program in the future, but for now it is just a working prototype. You are free to download and try the program though!
+However, this version of the program is a prototpye and not intended for any commercial or educational use. I may continue to work on this program in the future, but for now it is just a working prototype. You are free to download and try the program yourself though!
