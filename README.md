@@ -1,4 +1,4 @@
-# 16 Quadrilaterals Geoboard Project
+# 16 Quadrilaterals Geoboard Puzzle
 
 This program challenges users to draw 16 possible non-congruent quadrilaterals on a digital 3x3 pegboard, providing feedback and tracking progress as they explore the problem. 
 
