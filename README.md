@@ -4,7 +4,9 @@ This program challenges users to draw all 16 possible non-congruent quadrilatera
 
 ## Installation
 
-Download the file 16_Quadrilaterals_Geoboard_Puzzle_1.0.jar and run the executable jar file. 
+Download the file 16_Quadrilaterals_Geoboard_Puzzle_1.0.jar and run the executable jar file.  
+
+The JAR file was built using Java 22.0.1, so you need Java 22 installed to run.
 
 ## Using the program
 
