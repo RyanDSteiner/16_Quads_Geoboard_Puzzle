@@ -72,7 +72,6 @@ public class Pegboard extends AnchorPane {
                 count++;
                 connect(lastClicked, peg, count);
                 lastClicked = peg;
-                System.out.println(count);
                 return 0;
             } else {
                 return -2;
@@ -93,7 +92,6 @@ public class Pegboard extends AnchorPane {
                 connect(lastClicked, peg, count);
                 lastClicked = peg;
             }
-            System.out.println(count);
             return 1;
     }
 
