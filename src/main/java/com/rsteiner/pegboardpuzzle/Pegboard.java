@@ -39,8 +39,6 @@ public class Pegboard extends AnchorPane {
     public Peg getPeg(int n) {
         if (n < 1 || n > 9) {
             return null; }
-        else if(pegs[n-1] == null) {
-            return null; }
         else {
             return pegs[n-1];
         }
