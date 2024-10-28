@@ -11,6 +11,7 @@ public class Pegboard extends AnchorPane {
     private Peg first;
     private Peg lastClicked;
     private int count = 0;
+    private int submitted;
 
     public class Peg {
         protected Circle circle;
@@ -59,7 +60,7 @@ public class Pegboard extends AnchorPane {
             return -3;
         }
 
-        //Check a shape has already been formed
+        //Check if a shape has already been formed
         if (count > 4) {
             return -4;
         }
@@ -71,6 +72,7 @@ public class Pegboard extends AnchorPane {
                 count++;
                 connect(lastClicked, peg, count);
                 lastClicked = peg;
+                System.out.println(count);
                 return 0;
             } else {
                 return -2;
@@ -91,6 +93,7 @@ public class Pegboard extends AnchorPane {
                 connect(lastClicked, peg, count);
                 lastClicked = peg;
             }
+            System.out.println(count);
             return 1;
     }
 

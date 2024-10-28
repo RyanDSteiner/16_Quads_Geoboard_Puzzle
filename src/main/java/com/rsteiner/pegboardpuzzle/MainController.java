@@ -26,6 +26,7 @@ public class MainController {
     private Pegboard pegboard;
     private SolutionGrid sGrid;
     private boolean[] shapesCompleted = new boolean[16];
+    private boolean submitted;
 
     @FXML
     public void initialize() {
@@ -46,6 +47,7 @@ public class MainController {
                EventText.setText("This shape is not a valid quadrilateral. Press reset to try again.");
            }
            else if (qAnswer > 0 && !shapesCompleted[qAnswer-1]) {
+               submitted = true;
                sGrid.displaySolution(qAnswer, submission);
                shapesCompleted[qAnswer-1] = true;
                if (isComplete(shapesCompleted)) {
@@ -56,11 +58,11 @@ public class MainController {
                }
            }
            else {
-               EventText.setText("This shape is congruent to quadrilateral #" + qAnswer + ", which you already found. Press reset to try again.");
+               submitted = true;
+               EventText.setText("This shape is congruent to quadrilateral #" + qAnswer + ", which you already found.");
            }
            return;
        }
-
        else {
            EventText.setText("This shape is not complete, you can't submit it yet.");
        }
@@ -73,12 +75,14 @@ public class MainController {
 
     @FXML
     public void reset(MouseEvent event) {
+        submitted = false;
         pegboard.reset();
         EventText.setText("");
     }
 
     @FXML
     public void undo(MouseEvent event) {
+        submitted = false;
         pegboard.undo();
     }
 
@@ -87,18 +91,21 @@ public class MainController {
         if (event.getSource() instanceof Circle) {
             Circle circle = (Circle) event.getSource();
             int index = Character.getNumericValue(((Circle) event.getSource()).getId().charAt(1));
+            if (submitted) {
+                pegboard.reset();
+                submitted = false;
+            }
             int x = pegboard.press(index);
             if (x == -4) {
-                EventText.setText("You already finished drawing your shape! Click undo to go back, or click submit.");
-
+                EventText.setText("You already finished drawing your shape! Click submit to check, or click reset to try again.");
             }
-            if (x == -3) {
+            else if (x == -3) {
                 EventText.setText("Loading error");
             }
-            if (x == -2) {
+            else if (x == -2) {
                 EventText.setText("You already pressed that peg!");
             }
-            if (x == -1) {
+            else if (x == -1) {
                 EventText.setText("You already clicked on four pegs, now connect back to the first one you clicked.");
             }
             else {
