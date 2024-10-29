@@ -3,17 +3,13 @@ package com.rsteiner.pegboardpuzzle;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Line;
-import javafx.scene.shape.Rectangle;
 
 public class SolutionPane {
-    private AnchorPane pane;
-    private int num;
+    private final AnchorPane pane;
     private Circle[] circles;
-    private Rectangle rectangle;
 
-    public SolutionPane(AnchorPane p, int n) {
+    public SolutionPane(AnchorPane p) {
         pane = p;
-        num = n;
     }
 
     public void displayBoard() {
@@ -42,9 +38,9 @@ public class SolutionPane {
             c = circles[solution[2] - 1];
             d = circles[solution[3] - 1];
             Circle[] colorChange = { a, b, c, d };
-            for (int i = 0; i < colorChange.length; i++) {
-                colorChange[i].setFill(javafx.scene.paint.Color.web("#909090"));
-                colorChange[i].setStroke(javafx.scene.paint.Color.web("#252525"));
+            for (Circle circle : colorChange) {
+                circle.setFill(javafx.scene.paint.Color.web("#909090"));
+                circle.setStroke(javafx.scene.paint.Color.web("#252525"));
             }
             connect(a, b);
             connect(b, c);

@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.rsteiner</groupId>
-    <artifactId>PegboardPuzzle</artifactId>
+    <artifactId>16_Quads_GeoBoard_Puzzle</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>PegboardPuzzle</name>
+    <name>GeoboardPuzzle</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

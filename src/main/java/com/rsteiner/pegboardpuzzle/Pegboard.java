@@ -1,19 +1,17 @@
 package com.rsteiner.pegboardpuzzle;
 
-import javafx.scene.Group;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Line;
 
 public class Pegboard extends AnchorPane {
-    private static Peg[] pegs = new Peg[9];
-    private Line[] lines = new Line[4];
+    private static final Peg[] pegs = new Peg[9];
+    private final Line[] lines;
     private Peg first;
     private Peg lastClicked;
     private int count = 0;
-    private int submitted;
 
-    public class Peg {
+    public static class Peg {
         protected Circle circle;
         protected int n;
         protected boolean pressed = false;
@@ -24,9 +22,6 @@ public class Pegboard extends AnchorPane {
             this.circle = c;
             this.n = num;
         }
-        public boolean wasPressed() {
-            return pressed;
-        }
     }
 
     public Pegboard(Circle[] circles, Line[] l) {
@@ -34,14 +29,6 @@ public class Pegboard extends AnchorPane {
             pegs[i] = new Peg(circles[i], i+1);
         }
         this.lines = l;
-    }
-
-    public Peg getPeg(int n) {
-        if (n < 1 || n > 9) {
-            return null; }
-        else {
-            return pegs[n-1];
-        }
     }
 
     public int getCount() {
@@ -131,7 +118,6 @@ public class Pegboard extends AnchorPane {
             lastClicked = prev;
             count--;
         }
-        return;
     }
 
     public void connect(Peg p1, Peg p2, int count) {
@@ -144,12 +130,10 @@ public class Pegboard extends AnchorPane {
     }
 
     public int[] trace () {
-        String answer = "";
         int[] v = new int[4];
         Peg iter = first;
         int i = 0;
         while (iter != null && i < 4) {
-            answer += iter.n;
             v[i] = iter.n;
             iter = iter.next;
             i++;

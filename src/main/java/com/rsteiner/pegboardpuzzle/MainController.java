@@ -1,7 +1,6 @@
 package com.rsteiner.pegboardpuzzle;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.shape.Circle;
@@ -11,11 +10,7 @@ import javafx.scene.text.Text;
 public class MainController {
 
     @FXML
-    private Button InstructionsButton, OptionsButton, QuitButton, SubmitButton, ResetButton, UndoButton;
-    @FXML
     private Circle c1, c2, c3, c4, c5, c6, c7, c8, c9;
-    @FXML
-    private AnchorPane MainPegboard;
     @FXML
     private AnchorPane p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16;
     @FXML
@@ -25,7 +20,7 @@ public class MainController {
 
     private Pegboard pegboard;
     private SolutionGrid sGrid;
-    private boolean[] shapesCompleted = new boolean[16];
+    private final boolean[] shapesCompleted = new boolean[16];
     private boolean submitted;
 
     @FXML
@@ -61,7 +56,6 @@ public class MainController {
                submitted = true;
                EventText.setText("This shape is congruent to quadrilateral #" + qAnswer + ", which you already found.");
            }
-           return;
        }
        else {
            EventText.setText("This shape is not complete, you can't submit it yet.");
@@ -88,9 +82,8 @@ public class MainController {
 
     @FXML
     public void pegClick(MouseEvent event) {
-        if (event.getSource() instanceof Circle) {
-            Circle circle = (Circle) event.getSource();
-            int index = Character.getNumericValue(((Circle) event.getSource()).getId().charAt(1));
+        if (event.getSource() instanceof Circle circle) {
+            int index = Character.getNumericValue(circle.getId().charAt(1));
             if (submitted) {
                 pegboard.reset();
                 submitted = false;
@@ -115,13 +108,12 @@ public class MainController {
         }
 
         public boolean isComplete (boolean[] shapes) {
-            boolean complete = true;
-            for (int i = 0; i < shapes.length; i++) {
-                if (!shapes[i]) {
-                    complete = false;
+            for (boolean shape : shapes) {
+                if (!shape) {
+                    return false;
                 }
             }
-            return complete;
+            return true;
         }
 
     }
